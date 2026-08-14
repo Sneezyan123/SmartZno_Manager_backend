@@ -1,0 +1,265 @@
+{
+  "id": "m1-10",
+  "moduleId": "m1",
+  "title": "Логарифмічні вирази",
+  "slug": "m1-10",
+  "order": 10,
+  "status": "ready",
+  "objectives": [
+    "Означення логарифма",
+    "Властивості логарифмів",
+    "Спрощувати вирази"
+  ],
+  "nmtTags": [
+    "числа і вирази",
+    "логарифми"
+  ],
+  "subtopics": [],
+  "theory": [
+    {
+      "type": "heading",
+      "content": "Означення"
+    },
+    {
+      "type": "formula",
+      "content": "log_a b = c  ⇔  a^c = b  (a>0, a≠1, b>0)"
+    },
+    {
+      "type": "list",
+      "content": "Властивості:",
+      "items": [
+        "log_a(bc) = log_a b + log_a c",
+        "log_a(b/c) = log_a b − log_a c",
+        "log_a(b^k) = k · log_a b",
+        "log_a a = 1;  log_a 1 = 0;  a^(log_a b) = b"
+      ]
+    },
+    {
+      "type": "example",
+      "content": "log_2 8 = 3, бо 2^3 = 8"
+    },
+    {
+      "type": "tip",
+      "content": "Формули логарифмів є в довідці НМТ."
+    }
+  ],
+  "quizCards": [
+    {
+      "id": "m1-10-c01",
+      "front": "log_a a",
+      "back": "1"
+    },
+    {
+      "id": "m1-10-c02",
+      "front": "log_a 1",
+      "back": "0"
+    },
+    {
+      "id": "m1-10-c03",
+      "front": "log_2 8",
+      "back": "3"
+    },
+    {
+      "id": "m1-10-c04",
+      "front": "log_10 100",
+      "back": "2"
+    },
+    {
+      "id": "m1-10-c05",
+      "front": "log_a(bc)",
+      "back": "сума логарифмів"
+    },
+    {
+      "id": "m1-10-c06",
+      "front": "log_a(b^k)",
+      "back": "k log_a b"
+    },
+    {
+      "id": "m1-10-c07",
+      "front": "a^(log_a b)",
+      "back": "b"
+    },
+    {
+      "id": "m1-10-c08",
+      "front": "ОДЗ log_a b",
+      "back": "a>0, a≠1, b>0"
+    },
+    {
+      "id": "m1-10-c09",
+      "front": "lg",
+      "back": "log_10"
+    },
+    {
+      "id": "m1-10-c10",
+      "front": "ln",
+      "back": "log_e"
+    },
+    {
+      "id": "m1-10-c11",
+      "front": "log_3 27",
+      "back": "3"
+    },
+    {
+      "id": "m1-10-c12",
+      "front": "log_9 3",
+      "back": "1/2"
+    }
+  ],
+  "homework": [
+    {
+      "id": "m1-10-h1",
+      "type": "single",
+      "prompt": "log_5 25 =",
+      "options": [
+        {
+          "key": "А",
+          "text": "2"
+        },
+        {
+          "key": "Б",
+          "text": "5"
+        },
+        {
+          "key": "В",
+          "text": "10"
+        },
+        {
+          "key": "Г",
+          "text": "1"
+        },
+        {
+          "key": "Д",
+          "text": "0"
+        }
+      ],
+      "answer": "А",
+      "explanation": "5^2=25."
+    },
+    {
+      "id": "m1-10-h2",
+      "type": "open",
+      "prompt": "log_2 32 =",
+      "answer": "5",
+      "explanation": "2^5=32."
+    },
+    {
+      "id": "m1-10-h3",
+      "type": "open",
+      "prompt": "log_3 1 =",
+      "answer": "0",
+      "explanation": "log_a 1 = 0."
+    },
+    {
+      "id": "m1-10-h4",
+      "type": "single",
+      "prompt": "log_2 3 + log_2 5 =",
+      "options": [
+        {
+          "key": "А",
+          "text": "log_2 8"
+        },
+        {
+          "key": "Б",
+          "text": "log_2 15"
+        },
+        {
+          "key": "В",
+          "text": "log_2 2"
+        },
+        {
+          "key": "Г",
+          "text": "15"
+        },
+        {
+          "key": "Д",
+          "text": "2"
+        }
+      ],
+      "answer": "Б",
+      "explanation": "Добуток аргументів."
+    },
+    {
+      "id": "m1-10-h5",
+      "type": "match",
+      "prompt": "Вираз → значення",
+      "left": [
+        {
+          "key": "1",
+          "text": "log_7 7"
+        },
+        {
+          "key": "2",
+          "text": "log_4 2"
+        },
+        {
+          "key": "3",
+          "text": "log_10 1000"
+        }
+      ],
+      "right": [
+        {
+          "key": "А",
+          "text": "1"
+        },
+        {
+          "key": "Б",
+          "text": "1/2"
+        },
+        {
+          "key": "В",
+          "text": "3"
+        },
+        {
+          "key": "Г",
+          "text": "0"
+        },
+        {
+          "key": "Д",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "1": "А",
+        "2": "Б",
+        "3": "В"
+      },
+      "explanation": "1; 1/2; 3."
+    },
+    {
+      "id": "m1-10-h6",
+      "type": "open",
+      "prompt": "log_5 100 − log_5 4 =",
+      "answer": "2",
+      "explanation": "log_5 25 = 2."
+    },
+    {
+      "id": "m1-10-h7",
+      "type": "single",
+      "prompt": "log_9 3 =",
+      "options": [
+        {
+          "key": "А",
+          "text": "3"
+        },
+        {
+          "key": "Б",
+          "text": "1/2"
+        },
+        {
+          "key": "В",
+          "text": "2"
+        },
+        {
+          "key": "Г",
+          "text": "9"
+        },
+        {
+          "key": "Д",
+          "text": "1"
+        }
+      ],
+      "answer": "Б",
+      "explanation": "9^(1/2)=3."
+    }
+  ]
+}

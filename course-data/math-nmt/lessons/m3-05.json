@@ -1,0 +1,268 @@
+{
+  "id": "m3-05",
+  "moduleId": "m3",
+  "title": "Тригонометричні функції",
+  "slug": "m3-05",
+  "order": 5,
+  "status": "ready",
+  "objectives": [
+    "Знати період sin, cos, tg",
+    "Читати основні точки графіка",
+    "Розуміти зсуви"
+  ],
+  "nmtTags": [
+    "функції",
+    "тригонометрія"
+  ],
+  "subtopics": [
+    "період",
+    "графіки",
+    "зсуви"
+  ],
+  "theory": [
+    {
+      "type": "heading",
+      "content": "Періоди й область"
+    },
+    {
+      "type": "formula",
+      "content": "sin(x+2π)=sin x;  cos(x+2π)=cos x;  tg(x+π)=tg x"
+    },
+    {
+      "type": "list",
+      "content": "База:",
+      "items": [
+        "y=sin x, y=cos x: область R, значення [−1; 1]",
+        "y=tg x: область x ≠ π/2 + πk, значення R",
+        "sin 0=0, sin(π/2)=1, cos 0=1, cos(π/2)=0"
+      ]
+    },
+    {
+      "type": "example",
+      "content": "y=sin(x−π/2)= −cos x (зсув праворуч на π/2)."
+    },
+    {
+      "type": "tip",
+      "content": "Таблиця значень для 0°,30°,45°,60°,90° — у довідці НМТ."
+    }
+  ],
+  "quizCards": [
+    {
+      "id": "m3-05-c01",
+      "front": "Період sin",
+      "back": "2π"
+    },
+    {
+      "id": "m3-05-c02",
+      "front": "Період cos",
+      "back": "2π"
+    },
+    {
+      "id": "m3-05-c03",
+      "front": "Період tg",
+      "back": "π"
+    },
+    {
+      "id": "m3-05-c04",
+      "front": "Діапазон sin",
+      "back": "[−1;1]"
+    },
+    {
+      "id": "m3-05-c05",
+      "front": "sin(π/2)",
+      "back": "1"
+    },
+    {
+      "id": "m3-05-c06",
+      "front": "cos π",
+      "back": "−1"
+    },
+    {
+      "id": "m3-05-c07",
+      "front": "ОДЗ tg",
+      "back": "cos x ≠ 0"
+    },
+    {
+      "id": "m3-05-c08",
+      "front": "Парність cos",
+      "back": "парна"
+    },
+    {
+      "id": "m3-05-c09",
+      "front": "Парність sin",
+      "back": "непарна"
+    },
+    {
+      "id": "m3-05-c10",
+      "front": "y=sin(x+T)",
+      "back": "зсув ліворуч на T"
+    },
+    {
+      "id": "m3-05-c11",
+      "front": "Максимум sin",
+      "back": "1"
+    },
+    {
+      "id": "m3-05-c12",
+      "front": "cos 90°",
+      "back": "0"
+    }
+  ],
+  "homework": [
+    {
+      "id": "m3-05-h1",
+      "type": "single",
+      "prompt": "Період y=sin x:",
+      "options": [
+        {
+          "key": "А",
+          "text": "π/2"
+        },
+        {
+          "key": "Б",
+          "text": "π"
+        },
+        {
+          "key": "В",
+          "text": "2π"
+        },
+        {
+          "key": "Г",
+          "text": "4π"
+        },
+        {
+          "key": "Д",
+          "text": "1"
+        }
+      ],
+      "answer": "В",
+      "explanation": "2π."
+    },
+    {
+      "id": "m3-05-h2",
+      "type": "open",
+      "prompt": "sin 90° =",
+      "answer": "1",
+      "explanation": "Таблиця."
+    },
+    {
+      "id": "m3-05-h3",
+      "type": "open",
+      "prompt": "Найбільше значення y=cos x:",
+      "answer": "1",
+      "explanation": "1."
+    },
+    {
+      "id": "m3-05-h4",
+      "type": "single",
+      "prompt": "y=tg x не визначена при:",
+      "options": [
+        {
+          "key": "А",
+          "text": "x=0"
+        },
+        {
+          "key": "Б",
+          "text": "x=π"
+        },
+        {
+          "key": "В",
+          "text": "x=π/2"
+        },
+        {
+          "key": "Г",
+          "text": "x=2π"
+        },
+        {
+          "key": "Д",
+          "text": "x=π/4"
+        }
+      ],
+      "answer": "В",
+      "explanation": "cos(π/2)=0."
+    },
+    {
+      "id": "m3-05-h5",
+      "type": "match",
+      "prompt": "Функція → період",
+      "left": [
+        {
+          "key": "1",
+          "text": "sin x"
+        },
+        {
+          "key": "2",
+          "text": "tg x"
+        },
+        {
+          "key": "3",
+          "text": "cos 2x"
+        }
+      ],
+      "right": [
+        {
+          "key": "А",
+          "text": "2π"
+        },
+        {
+          "key": "Б",
+          "text": "π"
+        },
+        {
+          "key": "В",
+          "text": "π"
+        },
+        {
+          "key": "Г",
+          "text": "4π"
+        },
+        {
+          "key": "Д",
+          "text": "1"
+        }
+      ],
+      "answer": {
+        "1": "А",
+        "2": "Б",
+        "3": "В"
+      },
+      "explanation": "cos 2x має період π."
+    },
+    {
+      "id": "m3-05-h6",
+      "type": "open",
+      "prompt": "cos 0° =",
+      "answer": "1",
+      "explanation": "1."
+    },
+    {
+      "id": "m3-05-h7",
+      "type": "single",
+      "prompt": "Функція y=sin x є:",
+      "options": [
+        {
+          "key": "А",
+          "text": "парною"
+        },
+        {
+          "key": "Б",
+          "text": "непарною"
+        },
+        {
+          "key": "В",
+          "text": "сталою"
+        },
+        {
+          "key": "Г",
+          "text": "лінійною"
+        },
+        {
+          "key": "Д",
+          "text": "оберненою до tg"
+        }
+      ],
+      "answer": "Б",
+      "explanation": "sin(−x)=−sin x."
+    }
+  ]
+}

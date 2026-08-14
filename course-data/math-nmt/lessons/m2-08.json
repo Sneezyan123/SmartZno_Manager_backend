@@ -1,0 +1,259 @@
+{
+  "id": "m2-08",
+  "moduleId": "m2",
+  "title": "Тригонометричні рівняння",
+  "slug": "m2-08",
+  "order": 8,
+  "status": "ready",
+  "objectives": [
+    "Знати найпростіші рівняння",
+    "Працювати з періодом",
+    "Відбирати корені на проміжку"
+  ],
+  "nmtTags": [
+    "рівняння",
+    "тригонометричні"
+  ],
+  "subtopics": [],
+  "theory": [
+    {
+      "type": "heading",
+      "content": "Найпростіші"
+    },
+    {
+      "type": "formula",
+      "content": "sin x = a  (|a|≤1) — серія розв’язків через arcsin"
+    },
+    {
+      "type": "formula",
+      "content": "cos x = a;  tg x = a — відповідні загальні формули (у довідці/підручнику)"
+    },
+    {
+      "type": "example",
+      "content": "sin x = 0 ⇒ x = πk, k ∈ Z"
+    },
+    {
+      "type": "tip",
+      "content": "На НМТ часто достатньо табличних кутів і відбору на відрізку."
+    }
+  ],
+  "quizCards": [
+    {
+      "id": "m2-08-c01",
+      "front": "sin x = 0",
+      "back": "x=πk"
+    },
+    {
+      "id": "m2-08-c02",
+      "front": "cos x = 0",
+      "back": "x=π/2 + πk"
+    },
+    {
+      "id": "m2-08-c03",
+      "front": "sin x = 1",
+      "back": "x=π/2 + 2πk"
+    },
+    {
+      "id": "m2-08-c04",
+      "front": "cos x = 1",
+      "back": "x=2πk"
+    },
+    {
+      "id": "m2-08-c05",
+      "front": "sin x = 1/2",
+      "back": "30° + … / 150° + …"
+    },
+    {
+      "id": "m2-08-c06",
+      "front": "|a|>1 у sin x=a",
+      "back": "∅"
+    },
+    {
+      "id": "m2-08-c07",
+      "front": "Період sin, cos",
+      "back": "2π"
+    },
+    {
+      "id": "m2-08-c08",
+      "front": "Період tg",
+      "back": "π"
+    },
+    {
+      "id": "m2-08-c09",
+      "front": "ОДЗ tg x",
+      "back": "cos x ≠ 0"
+    },
+    {
+      "id": "m2-08-c10",
+      "front": "Перевірка на відрізку",
+      "back": "відбір коренів"
+    },
+    {
+      "id": "m2-08-c11",
+      "front": "cos x = −1",
+      "back": "x=π+2πk"
+    },
+    {
+      "id": "m2-08-c12",
+      "front": "sin²+cos²",
+      "back": "1 — для спрощення"
+    }
+  ],
+  "homework": [
+    {
+      "id": "m2-08-h1",
+      "type": "single",
+      "prompt": "sin x = 2 має розв’язків:",
+      "options": [
+        {
+          "key": "А",
+          "text": "∞"
+        },
+        {
+          "key": "Б",
+          "text": "2"
+        },
+        {
+          "key": "В",
+          "text": "1"
+        },
+        {
+          "key": "Г",
+          "text": "0"
+        },
+        {
+          "key": "Д",
+          "text": "4"
+        }
+      ],
+      "answer": "Г",
+      "explanation": "|sin|≤1."
+    },
+    {
+      "id": "m2-08-h2",
+      "type": "open",
+      "prompt": "Найменший невід’ємний корінь sin x = 0 (у градусах):",
+      "answer": "0",
+      "explanation": "x=0°."
+    },
+    {
+      "id": "m2-08-h3",
+      "type": "open",
+      "prompt": "cos 0° =",
+      "answer": "1",
+      "explanation": "1."
+    },
+    {
+      "id": "m2-08-h4",
+      "type": "single",
+      "prompt": "На [0°; 180°] рівняння sin x = 1/2 має коренів:",
+      "options": [
+        {
+          "key": "А",
+          "text": "0"
+        },
+        {
+          "key": "Б",
+          "text": "1"
+        },
+        {
+          "key": "В",
+          "text": "2"
+        },
+        {
+          "key": "Г",
+          "text": "3"
+        },
+        {
+          "key": "Д",
+          "text": "4"
+        }
+      ],
+      "answer": "В",
+      "explanation": "30° і 150°."
+    },
+    {
+      "id": "m2-08-h5",
+      "type": "match",
+      "prompt": "Рівняння → особливість",
+      "left": [
+        {
+          "key": "1",
+          "text": "sin x = 2"
+        },
+        {
+          "key": "2",
+          "text": "sin x = 0"
+        },
+        {
+          "key": "3",
+          "text": "cos x = 1"
+        }
+      ],
+      "right": [
+        {
+          "key": "А",
+          "text": "∅"
+        },
+        {
+          "key": "Б",
+          "text": "x=πk"
+        },
+        {
+          "key": "В",
+          "text": "x=2πk"
+        },
+        {
+          "key": "Г",
+          "text": "x=π/2"
+        },
+        {
+          "key": "Д",
+          "text": "x=π"
+        }
+      ],
+      "answer": {
+        "1": "А",
+        "2": "Б",
+        "3": "В"
+      },
+      "explanation": "∅; πk; 2πk."
+    },
+    {
+      "id": "m2-08-h6",
+      "type": "open",
+      "prompt": "tg 45° =",
+      "answer": "1",
+      "explanation": "1."
+    },
+    {
+      "id": "m2-08-h7",
+      "type": "single",
+      "prompt": "Період функції y = sin x:",
+      "options": [
+        {
+          "key": "А",
+          "text": "π/2"
+        },
+        {
+          "key": "Б",
+          "text": "π"
+        },
+        {
+          "key": "В",
+          "text": "2π"
+        },
+        {
+          "key": "Г",
+          "text": "4π"
+        },
+        {
+          "key": "Д",
+          "text": "1"
+        }
+      ],
+      "answer": "В",
+      "explanation": "2π."
+    }
+  ]
+}
