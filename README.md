@@ -9,19 +9,21 @@ CRM API + workers stubs для екосистеми **SmartZno**.
 
 ## Stack
 
-Python 3.12 · FastAPI · Motor (Mongo `smartzno_crm`) · JWT · Pydantic Settings
+Python 3.13+ · FastAPI · Motor (Mongo `smartzno_crm`) · JWT · Pydantic Settings
 
 Якщо Mongo недоступна — автоматичний **in-memory** режим (зручно для skeleton).
 
 ## Run
 
-```bash
+```powershell
 python -m venv .venv
 .\.venv\Scripts\activate
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 copy .env.example .env
-uvicorn app.main:app --reload --port 8000
+python -m uvicorn app.main:app --reload --port 8000
 ```
+
+Важливо: саме `python -m uvicorn` після `activate`. Гола команда `uvicorn` на Windows часто бере системний Python і сипле `ModuleNotFoundError`.
 
 Health: `GET http://localhost:8000/health`
 
