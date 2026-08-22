@@ -1,0 +1,265 @@
+{
+  "id": "m1-11",
+  "moduleId": "m1",
+  "title": "Тригонометричні вирази",
+  "slug": "m1-11",
+  "order": 11,
+  "status": "ready",
+  "objectives": [
+    "Основні тотожності",
+    "Табличні значення",
+    "Спрощувати триг. вирази"
+  ],
+  "nmtTags": [
+    "числа і вирази",
+    "тригонометрія"
+  ],
+  "subtopics": [],
+  "theory": [
+    {
+      "type": "heading",
+      "content": "Базові формули"
+    },
+    {
+      "type": "formula",
+      "content": "sin²α + cos²α = 1"
+    },
+    {
+      "type": "formula",
+      "content": "tg α = sin α / cos α"
+    },
+    {
+      "type": "list",
+      "content": "Таблиця (фрагмент):",
+      "items": [
+        "sin 30° = 1/2;  cos 30° = √3/2",
+        "sin 45° = cos 45° = √2/2",
+        "sin 60° = √3/2;  cos 60° = 1/2",
+        "sin 90° = 1;  cos 90° = 0;  tg 45° = 1"
+      ]
+    },
+    {
+      "type": "tip",
+      "content": "Табличні значення є в довідці НМТ."
+    }
+  ],
+  "quizCards": [
+    {
+      "id": "m1-11-c01",
+      "front": "sin²α + cos²α",
+      "back": "1"
+    },
+    {
+      "id": "m1-11-c02",
+      "front": "tg α",
+      "back": "sin/cos"
+    },
+    {
+      "id": "m1-11-c03",
+      "front": "sin 30°",
+      "back": "1/2"
+    },
+    {
+      "id": "m1-11-c04",
+      "front": "cos 60°",
+      "back": "1/2"
+    },
+    {
+      "id": "m1-11-c05",
+      "front": "sin 90°",
+      "back": "1"
+    },
+    {
+      "id": "m1-11-c06",
+      "front": "cos 0°",
+      "back": "1"
+    },
+    {
+      "id": "m1-11-c07",
+      "front": "sin 45°",
+      "back": "√2/2"
+    },
+    {
+      "id": "m1-11-c08",
+      "front": "tg 45°",
+      "back": "1"
+    },
+    {
+      "id": "m1-11-c09",
+      "front": "sin(90°−α)",
+      "back": "cos α"
+    },
+    {
+      "id": "m1-11-c10",
+      "front": "cos(90°−α)",
+      "back": "sin α"
+    },
+    {
+      "id": "m1-11-c11",
+      "front": "sin(−α)",
+      "back": "−sin α"
+    },
+    {
+      "id": "m1-11-c12",
+      "front": "sin 60°",
+      "back": "√3/2"
+    }
+  ],
+  "homework": [
+    {
+      "id": "m1-11-h1",
+      "type": "single",
+      "prompt": "sin²20° + cos²20° =",
+      "options": [
+        {
+          "key": "А",
+          "text": "0"
+        },
+        {
+          "key": "Б",
+          "text": "1"
+        },
+        {
+          "key": "В",
+          "text": "20"
+        },
+        {
+          "key": "Г",
+          "text": "sin 40°"
+        },
+        {
+          "key": "Д",
+          "text": "2"
+        }
+      ],
+      "answer": "Б",
+      "explanation": "Основна тотожність."
+    },
+    {
+      "id": "m1-11-h2",
+      "type": "open",
+      "prompt": "sin 30° =",
+      "answer": "1/2",
+      "explanation": "Табличне значення."
+    },
+    {
+      "id": "m1-11-h3",
+      "type": "open",
+      "prompt": "tg 45° =",
+      "answer": "1",
+      "explanation": "1."
+    },
+    {
+      "id": "m1-11-h4",
+      "type": "single",
+      "prompt": "cos 90° =",
+      "options": [
+        {
+          "key": "А",
+          "text": "1"
+        },
+        {
+          "key": "Б",
+          "text": "0"
+        },
+        {
+          "key": "В",
+          "text": "1/2"
+        },
+        {
+          "key": "Г",
+          "text": "√2/2"
+        },
+        {
+          "key": "Д",
+          "text": "−1"
+        }
+      ],
+      "answer": "Б",
+      "explanation": "0."
+    },
+    {
+      "id": "m1-11-h5",
+      "type": "match",
+      "prompt": "Кут → sin",
+      "left": [
+        {
+          "key": "1",
+          "text": "0°"
+        },
+        {
+          "key": "2",
+          "text": "30°"
+        },
+        {
+          "key": "3",
+          "text": "90°"
+        }
+      ],
+      "right": [
+        {
+          "key": "А",
+          "text": "0"
+        },
+        {
+          "key": "Б",
+          "text": "1/2"
+        },
+        {
+          "key": "В",
+          "text": "1"
+        },
+        {
+          "key": "Г",
+          "text": "√3/2"
+        },
+        {
+          "key": "Д",
+          "text": "√2/2"
+        }
+      ],
+      "answer": {
+        "1": "А",
+        "2": "Б",
+        "3": "В"
+      },
+      "explanation": "0; 1/2; 1."
+    },
+    {
+      "id": "m1-11-h6",
+      "type": "open",
+      "prompt": "cos²15° + sin²15° =",
+      "answer": "1",
+      "explanation": "1."
+    },
+    {
+      "id": "m1-11-h7",
+      "type": "single",
+      "prompt": "sin 60° =",
+      "options": [
+        {
+          "key": "А",
+          "text": "1/2"
+        },
+        {
+          "key": "Б",
+          "text": "√2/2"
+        },
+        {
+          "key": "В",
+          "text": "√3/2"
+        },
+        {
+          "key": "Г",
+          "text": "1"
+        },
+        {
+          "key": "Д",
+          "text": "0"
+        }
+      ],
+      "answer": "В",
+      "explanation": "√3/2."
+    }
+  ]
+}

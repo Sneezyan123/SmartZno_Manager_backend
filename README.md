@@ -7,6 +7,10 @@ CRM API + workers stubs для екосистеми **SmartZno**.
 - [SmartZno Land](https://github.com/Sneezyan123/SmartZno) — `http://localhost:3000`
 - [SmartZno Manager](https://github.com/Sneezyan123/SmartZno_Manager) — `http://localhost:3001`
 
+## Course data
+
+JSON-курси лежать у [`course-data/`](./course-data) (зараз НМТ математика: `math-nmt/curriculum.json` + уроки).
+
 ## Stack
 
 Python 3.13+ · FastAPI · Motor (Mongo `smartzno_crm`) · JWT · Pydantic Settings

@@ -23,6 +23,8 @@ MEMORY_COLLECTIONS = (
     "crm_locks",
     "crm_logs",
     "telegram_outbox",
+    "lms_progress",
+    "consultations",
 )
 
 
@@ -115,3 +117,28 @@ async def update_doc(collection: str, query: dict[str, Any], patch: dict[str, An
         return_document=ReturnDocument.AFTER,
     )
     return result
+
+
+async def delete_doc(collection: str, query: dict[str, Any]) -> bool:
+    if _use_memory or _db is None:
+        items = _memory.setdefault(collection, [])
+        for index, item in enumerate(items):
+            if all(item.get(k) == v for k, v in query.items()):
+                items.pop(index)
+                return True
+        return False
+    result = await _db[collection].delete_one(query)
+    return result.deleted_count > 0
+
+
+async def upsert_doc(collection: str, query: dict[str, Any], patch: dict[str, Any]) -> dict[str, Any]:
+    existing = await find_doc(collection, query)
+    if existing is not None:
+        updated = await update_doc(collection, query, patch)
+        return updated or {**existing, **patch}
+    doc = {**query, **patch}
+    if "_id" not in doc:
+        from app.util import new_id
+
+        doc["_id"] = new_id("lms")
+    return await insert_doc(collection, doc)

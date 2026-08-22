@@ -8,12 +8,15 @@ from app.config import get_settings
 from app.routers import (
     auth,
     cohorts,
+    consultations,
     curators,
     demo,
     diagnostics,
     health,
     leads,
+    lms,
     payments,
+    staff,
     students,
     subscriptions,
 )
@@ -47,7 +50,10 @@ def create_app() -> FastAPI:
     app.include_router(payments.router)
     app.include_router(cohorts.router)
     app.include_router(curators.router)
+    app.include_router(staff.router)
+    app.include_router(consultations.router)
     app.include_router(students.router)
+    app.include_router(lms.router)
     return app
 
 

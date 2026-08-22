@@ -190,3 +190,83 @@ class SlaItem(BaseModel):
     student_id: str
     due_at: datetime
     breach: bool
+
+
+NmtSubject = Literal["ukr", "math", "history", "eng", "bio", "geo"]
+ConsultStatus = Literal["scheduled", "completed", "cancelled", "no_show"]
+
+
+class TeacherResponse(BaseModel):
+    id: str
+    name: str
+    subject: str
+    subject_label: str
+    role: str = "teacher"
+    email: str | None = None
+    zoom_url: str | None = None
+
+
+class ConsultationCreate(BaseModel):
+    teacher_id: str
+    starts_at: datetime
+    duration_min: int = Field(default=45, ge=15, le=180)
+    subject: NmtSubject | None = None
+    student_name: str = Field(min_length=2, max_length=120)
+    student_phone: str | None = None
+    student_id: str | None = None
+    lead_id: str | None = None
+    notes: str | None = None
+    meeting_url: str | None = None
+
+
+class ConsultationUpdate(BaseModel):
+    teacher_id: str | None = None
+    starts_at: datetime | None = None
+    duration_min: int | None = Field(default=None, ge=15, le=180)
+    subject: NmtSubject | None = None
+    student_name: str | None = Field(default=None, min_length=2, max_length=120)
+    student_phone: str | None = None
+    student_id: str | None = None
+    lead_id: str | None = None
+    notes: str | None = None
+    meeting_url: str | None = None
+    status: ConsultStatus | None = None
+
+
+class ConsultationResponse(BaseModel):
+    id: str
+    teacher_id: str
+    teacher_name: str
+    starts_at: datetime
+    ends_at: datetime
+    duration_min: int
+    subject: str
+    subject_label: str
+    student_name: str
+    student_phone: str | None = None
+    student_id: str | None = None
+    lead_id: str | None = None
+    notes: str | None = None
+    meeting_url: str | None = None
+    status: ConsultStatus
+    created_at: datetime | None = None
+
+
+class ConsultStudentOption(BaseModel):
+    id: str
+    name: str
+    phone: str | None = None
+    grade: str | None = None
+
+
+class ConsultLeadOption(BaseModel):
+    id: str
+    name: str | None = None
+    phone: str | None = None
+    subject_interest: str | None = None
+
+
+class ConsultationMetaResponse(BaseModel):
+    teachers: list[TeacherResponse]
+    students: list[ConsultStudentOption]
+    leads: list[ConsultLeadOption]
